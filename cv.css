@@ -1,0 +1,64 @@
+html{
+    overflow: auto;
+}
+
+.body-container{
+    width:22cm;
+    height:2200px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:5px;
+    border:none;
+}
+
+.google-doc{
+   width:100%;
+   display: block;
+   overflow:visible;
+   border-width:3px;
+   border-color:#000000;
+   border-style:solid;
+   margin-left:auto;
+   margin-right:auto;
+   margin-top:5px;
+}
+
+
+.button {
+    z-index:10;
+    position:absolute;
+    width:50px;
+    height:50px;
+    top:15px;
+    left:15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    cursor:pointer;
+    margin:0px;
+    padding:0px;
+}
+
+p.button-text{
+    z-index:10;
+    color:white;
+    font-size:20;
+    text-indent:18px;
+}
+
+
+#home-button{
+    z-index:10;
+    background-color:#66C2E0;
+}
+
+
+#contactbutton{
+   z-index:10;
+   top:70px;
+   left:15px;
+   background-color:#FF9900;   
+}
+
+:link{
+    text-decoration:none;
+}
