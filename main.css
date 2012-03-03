@@ -13,23 +13,23 @@ html {
     margin-right:auto;
     margin-top: 0px;
     border-style:solid;
-    border-color: #66CCFF;
-    border-width: 2px;
-    padding-top:0px;
+    border-color: #66C2E0;
+    border-width: 3px;
+    padding-top:0px;    
 }
 
 .header-panel {
     width:auto;
-    height:50px;
+    height:80px;
     text-align: center;
     padding: 5px;
-    background-color:#66E0FF;
+    /*background-color:#66E0FF;*/
 }
 
 .button-panel{
     width:auto;
     height:20px;
-    background-color:#4D94FF;
+    background-color:#66C2E0;/*#4D94FF;*/
     font-variant:small-caps;
 }
 
@@ -37,10 +37,11 @@ html {
 h1 {
     background-color:auto;
     letter-spacing: 6px;
-    margin-top:10px;
+    margin-top:0px;
     font-variant:small-caps;
-    font: Georgia, serif;
+    font-family: "Georgia", serif;
     font-weight: 100;
-    line-height: 20px;
-    color:white;
+   
+    color:black;
+    font-size: 60px;
 }
