@@ -1,0 +1,26 @@
+<html>
+<head>
+    <script src="processing-1.3.6.min.js"></script>
+    <script src="gameoflife.js"></script>
+    <script src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+         var canvas = document.getElementById("mainCanvas");
+                      
+        // attaching the gameOfLife function to the canvas
+         var p = new Processing(canvas, gameOfLife);
+
+    });
+    </script>
+
+  
+  
+</head>
+<body>
+
+
+<canvas id="mainCanvas" width="800" height="600"></canvas>
+
+
+</body>
+</html>
