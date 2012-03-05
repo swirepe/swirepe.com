@@ -21,6 +21,13 @@ html {
 todo: make this a list instead of divs
 
 */
+
+ul.banner-panel {
+    list-style-type:none;
+    margin:0px;
+    padding:0px;  
+}
+
 .banner-button{
     float:center;
     width:60px;
@@ -30,4 +37,14 @@ todo: make this a list instead of divs
     color:white;
     font-size:30px;
     line-height:60px;
+    display:inline;
+}
+
+li.banner-button {
+    float:center;
+    display:inline;
+}
+
+a.banner-button{
+    width:100px;
 }
