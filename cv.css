@@ -2,7 +2,10 @@ html{
     overflow: auto;
     background-color:#000022; /* todo: decide on a happy background color */
 }
-
+/*
+    todo: make a loding thing for that container before it fills up.
+    sometimes google takes its time hitting me back.
+*/
 .body-container{
     width:22cm;
     height:2200px;
