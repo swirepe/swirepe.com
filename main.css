@@ -5,7 +5,7 @@ html {
     font-family: Arial,Helvetica,sans-serif;
 }
 
-.banner-panel {
+div.banner-panel {
     background-color: #66C2E0;
     width:100%;
     height:60px;
@@ -17,34 +17,47 @@ html {
     right:0px;
 }
 
-/*
-todo: make this a list instead of divs
-
-*/
 
 ul.banner-panel {
     list-style-type:none;
-    margin:0px;
-    padding:0px;  
+    margin:0 auto;
+    padding:0px;
+    width:600px;
 }
 
-.banner-button{
-    float:center;
-    width:60px;
+a.banner-button{
     padding:0px;
     margin:0px;
     text-align:center;
     color:white;
     font-size:30px;
     line-height:60px;
-    display:inline;
+    display:block;
+    width:150px;
 }
 
 li.banner-button {
-    float:center;
-    display:inline;
+    float:left;
 }
 
-a.banner-button{
-    width:100px;
+
+a.banner-button:hover{
+    background-color:#0033FF;
+}
+
+
+div.name {
+    margin-top:100px;
+    text-align:center;
+    font-size:200px;
+    color:white;
+    font-family:monospace;
+}
+
+div.subname{
+    margin-top:20px;
+    text-align:center;
+    font-size:35px;
+    color:white;
+    font-variant:small-caps;
 }
