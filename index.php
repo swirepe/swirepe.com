@@ -5,7 +5,7 @@
 </head>
 <body>
         <div class="body-container">
-        	<?php include("banner.php"); ?>
+        	<?php include($_SERVER['DOCUMENT_ROOT']."/include/banner.php"); ?>
         
 
 	        <div class="name">Peter<br/>Swire</div>
