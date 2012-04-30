@@ -1,2 +1,2 @@
 @echo off
-both watch.bat -v -f md/*.md -c "pandoc --data-dir=include --from=markdown --to=html md/*.md" ++ watch.bat -v -f include/*.html -c "mv include/*.html include/*.php
+for %%F in (md/*.md) do pandoc md/%%F > include/%%~nF.php
