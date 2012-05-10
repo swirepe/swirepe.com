@@ -115,8 +115,12 @@ function nextGeneration(board){
 function draw(){
 	var board = randomBoard(100,100);
 
-	var canvas = document.getElementById("canvas");  
+	var canvas = document.getElementById("gameoflifecanvas");  
  	var ctx = canvas.getContext("2d"); 
 
 
 } // end of function draw
+
+function onFrame(event){
+	
+}

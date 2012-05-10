@@ -35,7 +35,8 @@
 
             		 <p>One time, I watched a kid "invent" divison.  That is my proudest moment.</p>
 
-                <p>My non-professional interests include guitars, feminism, and guitars.</p>
+                <p>My non-professional interests include guitars, feminism, and anything that could be described as
+                    Markovian or Bayesian.</p>
 
                 	<p>Check out the <a href="tools.php">tools that I use</a>, read some pseudorandom <a href="factlets.php">facts about me</a>, then <a href="/contact">send me an email.</a></p>
 

@@ -1,2 +1,2 @@
 @echo off
-watch -v -f md/ -c "markdownToPHP.bat"
+watch -vv -f md/ -c "markdownToPHP.bat"
