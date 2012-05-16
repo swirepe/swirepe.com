@@ -49,7 +49,7 @@ This computer is better than yours.</code></pre>
 <p>For everything else, I use google docs.</p>
 <h3 id="data-mining-machine-learning">Data Mining &amp; Machine Learning</h3>
 <p>I do a lot of my model prototyping in Python with numpy and ipython. If I need a speedup, I'll generally move to Java with Eclipse. I know how to use <a href="http://www.cs.waikato.ac.nz/ml/weka/">Weka</a>, but I'm finding that as my research becomes more specific, I have less use for it. There was one project I needed C's speed for, but it wasn't comfortable.</p>
-<p>Before I had a Matlab license, I used a lot of <a href="http://www.r-project.org/">R</a> with the incredible IDE <a href="http://rstudio.org/">RStudio</a>. I prefer Bayesian Networks for their interpretability and causal implications, so I spend a lot of time with <a href="http://www.bnlearn.com/">bnlearn</a> and the <a href="http://code.google.com/p/bnt/">Byes Net Toolbox</a>.</p>
+<p>Before I had a Matlab license, I used a lot of <a href="http://www.r-project.org/">R</a> with the incredible IDE <a href="http://rstudio.org/">RStudio</a>. I prefer Bayesian Networks for their interpretability and causal implications, so I spend a lot of time with <a href="http://www.bnlearn.com/">bnlearn</a> and the <a href="http://code.google.com/p/bnt/">Bayes Net Toolbox</a>.</p>
 <p>I never found the time to get fluent in vim or emacs, so I use <a href="http://www.jedit.org/">jedit</a>, <a href="http://www.sublimetext.com/2">sublime text 2</a>, and <a href="http://www.eclipse.org/">eclipse</a>.</p>
 <p>Never underestimate Excel.</p>
 <h3 id="general">General</h3>

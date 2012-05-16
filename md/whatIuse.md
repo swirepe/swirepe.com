@@ -75,7 +75,7 @@ For everything else, I use google docs.
 
 I do a lot of my model prototyping in Python with numpy and ipython.  If I need a speedup, I'll generally move to Java with Eclipse.  I know how to use [Weka](http://www.cs.waikato.ac.nz/ml/weka/), but I'm finding that as my research becomes more specific, I have less use for it.  There was one project I needed C's speed for, but it wasn't comfortable.
 
-Before I had a Matlab license, I used a lot of [R](http://www.r-project.org/) with the incredible IDE [RStudio](http://rstudio.org/).  I prefer Bayesian Networks for their interpretability and causal implications, so I spend a lot of time with [bnlearn](http://www.bnlearn.com/) and the [Byes Net Toolbox](http://code.google.com/p/bnt/).
+Before I had a Matlab license, I used a lot of [R](http://www.r-project.org/) with the incredible IDE [RStudio](http://rstudio.org/).  I prefer Bayesian Networks for their interpretability and causal implications, so I spend a lot of time with [bnlearn](http://www.bnlearn.com/) and the [Bayes Net Toolbox](http://code.google.com/p/bnt/).
 
 I never found the time to get fluent in vim or emacs, so I use [jedit](http://www.jedit.org/), [sublime text 2](http://www.sublimetext.com/2), and [eclipse](http://www.eclipse.org/).
 

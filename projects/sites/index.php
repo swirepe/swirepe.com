@@ -2,6 +2,17 @@
 <head>
 	<title>About Peter Swire - Some Projects</title>
 	<link rel="stylesheet" type="text/css" href="/main.css" />
+	<script type="text/javascript" src="/js/jquery-1.7.1.min.js"></script>
+
+	<!-- set the height for the image column-->
+	<script type="text/javascript">
+	$(document).ready(function() {
+   		var h = $(".middle-column").height();
+   		$(".wide-column").height(h+35);
+   		$(".thumb-column").height(h+35);
+ 	});
+	</script>
+
 
 	<?php include($_SERVER['DOCUMENT_ROOT']."/include/styleh1.php"); ?>
 
@@ -12,6 +23,8 @@
 	}
 
 	</style>
+
+<!-- project selector -->	
 <?php
 ini_set('display_errors', 0);
 $project = 0;
@@ -53,26 +66,35 @@ switch($project){
 $page = $md . $page;
 
 ?> 
+
+<script>
+
+
+</script>
+
 </head>
 <body>
-        <div class="body-container">
-                <?php include($_SERVER['DOCUMENT_ROOT']."/include/banner.php"); ?>
+    <div class="body-container">
+            <?php include($_SERVER['DOCUMENT_ROOT']."/include/banner.php"); ?>
 
 
-            <div class="selector-panel">
+        
+        <div class="wide-column" style="height:100%">
 
+			<div class="thumb-column">
+				<img src=<?php echo $img ?> >
+			</div>
+
+        	<div class="middle-column" style="float:left">
+				<?php include($page) ?>
+
+				
         	</div>
-            <div class="wide-column">
 
-				<div class="thumb-column">
-					<img src=<?php echo $img ?> >
-				</div>
 
-            	<div class="middle-column">
-					<?php include($page) ?>
-            	</div>
-
-            </div>
         </div>
-    </body>
+    
+
+    </div>
+</body>
 </html>
