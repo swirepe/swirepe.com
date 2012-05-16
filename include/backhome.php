@@ -2,19 +2,22 @@
 <br />
 <br />
 <style type="text/css">
-	p.backhome{
-
+	.backhome{
 		font-family:monospace;
 		font-size:40px;
+		position:absolute;
+		bottom:-20px; 
+		line-height:40px;
 	}
 
-	p.backhome a{
+	.backhome a{
 		text-decoration: none;
 	}
 
-	p.backhome a:hover {
+	.backhome a:hover {
 		color: white;
 
 	}
+
 </style>
-<p class="backhome"><a href="/">&lt;= Home</a></p>
+<div class="backhome"><p><a href="/">&lt;= Home</a></p></div>
