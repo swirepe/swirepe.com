@@ -36,8 +36,8 @@ try{
 $md = $_SERVER['DOCUMENT_ROOT']."/include/";
 switch($project){
 	case "swirepe":
-		$img = 0;
-		$page = 0;
+		$img = "face.jpg";
+		$page = "swirepe.php";
 		break;
 	case "inappropriamatic":
 		$img = "inappro.png";
@@ -75,10 +75,10 @@ $page = $md . $page;
 </head>
 <body>
     <div class="body-container">
-            <?php include($_SERVER['DOCUMENT_ROOT']."/include/banner.php"); ?>
+        <?php include($_SERVER['DOCUMENT_ROOT']."/include/banner.php"); ?>
 
+        <?php include("site-banner.php") ?>
 
-        
         <div class="wide-column" style="height:100%">
 
 			<div class="thumb-column">
