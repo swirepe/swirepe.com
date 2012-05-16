@@ -10,9 +10,31 @@
 			position:fixed;
 			top:0;
 			left:0;
+			width:0%;
+			height:0%;
 		}
 
 	</style>
+
+<?php 
+ini_set('display_errors', 0);
+$page = $_GET['page'];
+
+$inc;
+switch($page){
+	case 'pgp':
+		$inc = "pgp.php";
+		break;
+	case 'skype':
+		$inc = "skype-button.php";
+		break;
+	case 'email':
+	default:
+		$inc = 'email.php';
+}
+
+
+?>
 
 </head>
 <body>
@@ -20,7 +42,9 @@
 	</canvas>
     <div class="body-container">
             <?php include($_SERVER['DOCUMENT_ROOT']."/include/banner.php"); ?>
+			<?php include("./contact-banner.php"); ?>
 
+			<?php include($inc); ?>
     </div>
 </body>	
 </html>
