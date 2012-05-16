@@ -1,0 +1,27 @@
+.box {
+	border-radius:15px;
+	background-color:#62B1d0;
+	margin-top:150px;
+	color:white;
+	width:700px;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+}
+
+.box a{
+	text-decoration:none;
+	font-family:monospace;
+}
+
+.box a:hover{
+	color:#ff8500;
+}
+
+.box a:visited{
+	color:#4a60d7;
+}
+
+.box a:active{
+	color:#ffa340;
+}
