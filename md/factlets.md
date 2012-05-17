@@ -18,8 +18,6 @@ For one of my performance requirements, I was not allowed to play guitar; I had 
 
 I also play the viola da gamba.  It's an extinct instrument that later went on to become the guitar family.  One day, when I am rich, I will pick it back up.
 
-If you go through my ipod, you will either conclude that I am a middle-aged Julliard alumnus, a psychedelic voodoo chile, or an angry 19 year old lesbian.  
-
 I have about 20 guitars, many of which I have modified extensively.  In high school, instead of practicing scales, I played guitar like it was a very weak AC generator.
 
 I am a moderator on [r/coding.](http://www.reddit.com/r/coding)
@@ -28,7 +26,6 @@ I've done a little traveling, but I have never lived abroad.  I plan on living i
 
 I vote with my wallet.  When I see a used book store, I go in and buy a math book, just so that used book stores will carry math books.
 
-I do some technical work for my friend's literary magazine [Broad!](http://www.broadzine.com)  It's a great publication, and I am proud to be a part of it.
+[Broad!](http://www.broadzine.com/about/) is my favorite magazine.  My friend saw that no publications did what she needed, so she started one.
 
 I am not a vegan, but I cook like one.
-

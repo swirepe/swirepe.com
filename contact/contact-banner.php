@@ -55,7 +55,7 @@ a.contact-button:visited{
 		<li class="contact-button"><a class="contact-button" href="?page=pgp">PGP</a></li>
 		<li class="contact-button"><a class="contact-button" href="https://github.com/swirepe">Github</a></li>
         <li class="contact-button"><a class="contact-button" href="https://plus.google.com/107527688888192155981/posts">G+</a></li>
-		<li class="contact-button"><a class="contact-button" href="https://twitter.com/#!/StateMech">Twitter</a></li>
+		<li class="contact-button"><a class="contact-button" href="http://www.kaggle.com/users/3151/peter-swire">Kaggle</a></li>
 		<li class="contact-button"><a class="contact-button" href="?page=skype">Skype</a></li>
 
 	</ul>

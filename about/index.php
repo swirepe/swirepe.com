@@ -33,10 +33,10 @@
             		 according to the No Child Left Behind act. Every child that I proposed
             		 a data-driven intervention for increased their MCAS score.</p>
 
-            		 <p>One time, I watched a kid "invent" divison.  That is my proudest moment.</p>
+            		 <p>One time, I watched a kid "invent" division.  That is my proudest moment.</p>
 
                 <p>My non-professional interests include guitars, feminism, and anything that could be described as
-                    Markovian or Bayesian.</p>
+                    <i>Markovian</i> or <i>Bayesian.</i></p>
 
                 	<p>Check out the <a href="tools.php">tools that I use</a>, read some pseudorandom <a href="factlets.php">facts about me</a>, then <a href="/contact">send me an email.</a></p>
 
