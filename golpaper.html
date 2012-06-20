@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head>
+    <title>Game Of Life</title>
+        <script type="text/javascript" src="paper/lib/paper.js"></script>
+        <script type="text/javascript" src=""></script>
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+        
+<script type="text/paperscript" canvas="myCanvas">
+
+var x = new Rectangle(0,0,5,5); 
+
+
+var group = new Group();
+
+var Cell = Base.extend({
+   initialize: function(){
+       this.neighbors = [];
+       this.initProb = 0.3;
+       this.state = (Math.random() < initProb)
+       group.addChild(this.item);
+   },
+
+   setNeighbors:function(neighbors){
+        this.neighbors = neighbors;  
+   },
+               
+                       
+});
+
+
+var Board = Base.extend({
+
+    initialize:function(){
+    
+    
+    }
+                        
+});
+
+
+
+</script>
+        
+        
+    </head>
+    <body>
+        <canvas id="myCanvas" resize></canvas>
+    </body>
+</html>
