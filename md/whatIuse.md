@@ -66,7 +66,7 @@ For papers, I have a separate [SpiderOak](http://spideroak.com) account.  You ge
 
 For note snippets, I use [TiddlyWiki](http://www.tiddlywiki.com/).  It's basically a quick reference manual for me now.  When I want to remember the formula for something or the name of a particular tool, I use this.  I've tried using Evernote to fill this role, but I just end up using it as a bookmark system that I never go back through.
 
-I discovered halfway through my first year that TiddlyWiki isn't so good for taking notes on whole papers.  For those, I take notes by hand, and then copy the important parts down using a plaintext file and markdown.  If there was a [frescobaldi](http://www.frescobaldi.org/index.html) equivalent for LaTeX, I would use that instead.  Markdown works well enough for me now, so I'm sticking with that.
+I discovered halfway through my first year that TiddlyWiki isn't so good for taking notes on whole papers.  For those, I take notes by hand, and then copy the important parts down using a plaintext file and markdown.  If there was a [Frescobaldi](http://www.frescobaldi.org/index.html) equivalent for LaTeX, I would use that instead.  Markdown works well enough for me now, so I'm sticking with that.
 
 For everything else, I use Google docs.
 
@@ -83,6 +83,12 @@ Never underestimate Excel.
 
 ### General
 
+I keep a [Tor](https://www.torproject.org/about/torusers.html.en#journalist) relay node running all the time and keep the password off my wireless router.  I am some kind of philanthropist.
+
 I use autohotkey for custom keyboard shortcuts and [bugn](http://www.autohotkey.net/~joten/bug.n.html) as a tiling window manager.  There are also a bunch of small utilities that make Windows life easier: most notably [mingw](http://mingw.org/), [process.exe](http://retired.beyondlogic.org/consulting/processutil/processutil.htm), and [watch](https://github.com/swirepe/Watch).
+
+
+My linux setup is a lot like my windows one, except instead of a bunch of batch files I use [Gnome-Do.](http://do.davebsd.com/)  This is my [Conky](http://votritis.deviantart.com/art/Reloj-Conky-208415121) theme, and I cycle through my [backgrounds](http://www.dropbox.com/gallery/8705957/2/fluff/backgrounds?h=8e230d) with [Wallch](http://wall-changer.sourceforge.net/).
+
 
 [F.lux](http://stereopsis.com/flux/) keeps my eyes inside my head.
