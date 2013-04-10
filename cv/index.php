@@ -54,7 +54,7 @@
     
         <div class="body-container">
             Hosted on Google Docs.  <a href="https://docs.google.com/document/d/1JvV7ok0oLLRonnPre95SXHup9ITqevOFEDE6L8yAt2E/edit">Direct Link.</a>
-            <iframe class="google-doc" src="https://docs.google.com/document/d/1JvV7ok0oLLRonnPre95SXHup9ITqevOFEDE6L8yAt2E/pub?embedded=true" height="100%">Loading...</iframe>
+            <iframe class="google-doc" src="https://docs.google.com/document/d/1JvV7ok0oLLRonnPre95SXHup9ITqevOFEDE6L8yAt2E/pub?embedded=true" height="2500">Loading...</iframe>
         </div>
     </body>
 </html>
