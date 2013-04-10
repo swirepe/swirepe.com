@@ -7,6 +7,7 @@
 
 </head>
 <body>
+        <?php include_once($_SERVER['DOCUMENT_ROOT']."/include/analytics.php") ?>
         <div class="body-container">
                 <?php include($_SERVER['DOCUMENT_ROOT']."/include/banner.php"); ?>
 

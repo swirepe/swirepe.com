@@ -38,6 +38,7 @@ switch($page){
 
 </head>
 <body>
+    <?php include_once($_SERVER['DOCUMENT_ROOT']."/include/analytics.php") ?>
 	<canvas id="gameoflifecanvas">
 	</canvas>
     <div class="body-container">

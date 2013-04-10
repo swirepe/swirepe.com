@@ -47,12 +47,14 @@
         <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
     </head>
     <body>
+        <?php include_once($_SERVER['DOCUMENT_ROOT']."/include/analytics.php") ?>
+        
         <a href="/"><div class="button" id="home-button"><p class="button-text" id="home">H</p> </div></a>
         <a href="/contact"><div class="button" id="contactbutton"><p class="button-text" id="contact">C</p></div></a>
     
         <div class="body-container">
             Hosted on Google Docs.  <a href="https://docs.google.com/document/d/1JvV7ok0oLLRonnPre95SXHup9ITqevOFEDE6L8yAt2E/edit">Direct Link.</a>
-            <iframe class="google-doc" src="PeterSwireCV.html" height="100%">Loading...</iframe>
+            <iframe class="google-doc" src="https://docs.google.com/document/d/1JvV7ok0oLLRonnPre95SXHup9ITqevOFEDE6L8yAt2E/pub?embedded=true" height="100%">Loading...</iframe>
         </div>
     </body>
 </html>
