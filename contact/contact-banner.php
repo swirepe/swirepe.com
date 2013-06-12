@@ -17,7 +17,7 @@ ul.contact-banner-panel {
     list-style-type:none;
     margin:0 auto;
     padding:0px;
-    width:854px;
+    width:800px;
 }
 
 li.contact-button {
@@ -33,7 +33,7 @@ a.contact-button{
     font-weight:bold;
     line-height:30px;
     display:block;
-    width:122px;
+    width:100px;
     text-decoration:none;
 }
 
@@ -56,6 +56,7 @@ a.contact-button:visited{
 		<li class="contact-button"><a class="contact-button" href="https://github.com/swirepe">Github</a></li>
         <li class="contact-button"><a class="contact-button" href="https://plus.google.com/107527688888192155981/posts">G+</a></li>
 		<li class="contact-button"><a class="contact-button" href="http://www.kaggle.com/users/3151/peter-swire">Kaggle</a></li>
+		<li class="contact-button"><a class="contact-button" href="?page=goodreads">Goodreads</a></li>
 		<li class="contact-button"><a class="contact-button" href="?page=skype">Skype</a></li>
 
 	</ul>
