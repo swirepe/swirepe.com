@@ -28,6 +28,9 @@ switch($page){
 	case 'skype':
 		$inc = "skype-button.php";
 		break;
+	case 'goodreads':
+	    $inc = "goodreads.php";
+	    break;
 	case 'email':
 	default:
 		$inc = 'email.php';
