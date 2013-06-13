@@ -37,33 +37,33 @@ $md = $_SERVER['DOCUMENT_ROOT']."/include/";
 switch($project){
 	case "swirepe":
 		$img = "face.jpg";
-		$page = "swirepe.php";
+		$inc = "swirepe.php";
 		break;
 	case "inappropriamatic":
 		$img = "inappro.png";
-		$page = "inappropriamatic.php";
+		$inc = "inappropriamatic.php";
 		break;
 
 	case "important4batia":
 		$img = "important4batia.jpg";
-		$page = "important4batia.php";
+		$inc = "important4batia.php";
 		break;
 	case "victoriant":
 		$img = "victoriant.jpg";
-		$page =  "victoriant.php";
+		$inc =  "victoriant.php";
 		break;
 	case "tireless":
 		$img = "tireless.png";
-		$page = "tireless.php";
+		$inc = "tireless.php";
 		break;
 	case "drfiveminutes":
 	default:
 		$img = "drfive.gif";
-		$page = "drfiveminutes.php";
+		$inc = "drfiveminutes.php";
 		break;
 }
 
-$page = $md . $page;
+$page = $md . $inc;
 
 ?> 
 

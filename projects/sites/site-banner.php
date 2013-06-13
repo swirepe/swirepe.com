@@ -46,17 +46,23 @@ a.site-button:visited{
     color:white;
 }
 
+#chosen {
+    background-color: #0776a0
+}
+
 </style>
 
+
+    
 <div class="site-banner-panel">
 	<ul class="site-banner-panel">
 		<li class="site-button"><a class="site-button" href="/">Home</a></li>
-		<li class="site-button"><a class="site-button" href="?project=drfiveminutes">DRFVMN</a></li>
-		<li class="site-button"><a class="site-button" href="?project=important4batia">Important4batia</a></li>
-		<li class="site-button"><a class="site-button" href="?project=victoriant">Victoriant</a></li>
-		<li class="site-button"><a class="site-button" href="?project=tireless">Tireless</a></li>
-		<li class="site-button"><a class="site-button" href="?project=inappropriamatic">Inappropriamatic</a></li>
-		<li class="site-button"><a class="site-button" href="?project=swirepe">swirepe.com</a></li>
+		<li class="site-button"><a class="site-button" <?php if($inc == "drfiveminutes.php"){ echo 'id="chosen"'; } ?> href="?project=drfiveminutes">DRFVMN</a></li>
+		<li class="site-button"><a class="site-button" <?php if($inc == "important4batia.php"){ echo 'id="chosen"'; } ?> href="?project=important4batia">Important4batia</a></li>
+		<li class="site-button"><a class="site-button" <?php if($inc == "victoriant.php"){ echo 'id="chosen"'; } ?> href="?project=victoriant">Victoriant</a></li>
+		<li class="site-button"><a class="site-button" <?php if($inc == "tireless.php"){ echo 'id="chosen"'; } ?> href="?project=tireless">Tireless</a></li>
+		<li class="site-button"><a class="site-button" <?php if($inc == "inappropriamatic.php"){ echo 'id="chosen"'; } ?> href="?project=inappropriamatic">Inappropriamatic</a></li>
+		<li class="site-button"><a class="site-button" <?php if($inc == "swirepe.php"){ echo 'id="chosen"'; } ?> href="?project=swirepe">swirepe.com</a></li>
 
 	</ul>
 </div>
