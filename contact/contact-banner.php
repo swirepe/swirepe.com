@@ -38,6 +38,7 @@ a.contact-button{
 }
 
 
+
 a.contact-button:hover{
     background-color:#024C68;
 }
@@ -60,11 +61,12 @@ a.contact-button:visited{
 		<li class="contact-button"><a class="contact-button" href="/">Home</a></li>
 		<li class="contact-button"><a class="contact-button" <?php if($inc == "email.php"){ echo 'id="chosen"'; } ?> href="?page=email">Email</a></li>
 		<li class="contact-button"><a class="contact-button" <?php if($inc == "pgp.php"){ echo 'id="chosen"'; } ?> href="?page=pgp">PGP</a></li>
-		<li class="contact-button"><a class="contact-button" href="https://github.com/swirepe">Github</a></li>
-        <li class="contact-button"><a class="contact-button" href="https://plus.google.com/107527688888192155981/posts">G+</a></li>
-		<li class="contact-button"><a class="contact-button" href="http://www.kaggle.com/users/3151/peter-swire">Kaggle</a></li>
-		<li class="contact-button"><a class="contact-button" <?php if($inc == "goodreads.php"){ echo 'id="chosen"'; } ?> href="?page=goodreads">Goodreads</a></li>
+        <li class="contact-button"><a class="contact-button" <?php if($inc == "goodreads.php"){ echo 'id="chosen"'; } ?> href="?page=goodreads">Goodreads</a></li>
 		<li class="contact-button"><a class="contact-button" <?php if($inc == "skype-button.php"){ echo 'id="chosen"'; } ?> href="?page=skype">Skype</a></li>
+		<li class="contact-button"><a class="contact-button" target="_blank" href="https://github.com/swirepe">Github</a></li>
+        <li class="contact-button"><a class="contact-button" target="_blank" href="https://plus.google.com/107527688888192155981/posts">G+</a></li>
+		<li class="contact-button"><a class="contact-button" target="_blank" href="http://www.kaggle.com/users/3151/peter-swire">Kaggle</a></li>
+
 
 	</ul>
 </div>
