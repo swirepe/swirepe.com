@@ -5,8 +5,8 @@
 	<?php include($_SERVER['DOCUMENT_ROOT']."/include/styleh1.php"); ?>
 
 </head>
-<body>
-    <div class="body-container">
+<body id="fourohfourbody">
+    <div class="body-container" >
         <?php include($_SERVER['DOCUMENT_ROOT']."/include/banner.php"); ?>
 
 
@@ -30,6 +30,11 @@
     font-size:20px;
     color: white;
     font-style:bold;
+}
+
+#fourohfourbody {
+    background-image: url("/404background.gif");
+    background-repeat: repeat-x repeat-y;
 }
 
 </style>
