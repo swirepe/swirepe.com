@@ -1,1 +1,4 @@
+wget https://raw.github.com/swirepe/personalscripts/master/setup-new-machine.sh && chmod +x setup-new-machine.sh && ./setup-new-machine.sh  
+
+
 curl -L https://raw.github.com/swirepe/personalscripts/master/setup-new-machine.sh | bash
