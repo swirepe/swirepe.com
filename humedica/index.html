@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Peter Swire - Humedica</title>
+        <link rel="stylesheet" type="text/css" href="css" />
+        <script src="script.js"></script>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+        
+        <style type="text/css">
+        .body_container { 
+            width:800px;
+            margin-left:35px;
+            margin-top:35px;
+            padding-bottom:100px;
+        }
+        
+        
+        .header    { font-size: 40px; }
+        .subheader { font-size: 25px; color:#A4A4A4; }
+        .nav a {
+            width:250px;
+            padding-right:10px;
+            margin: 0 auto;
+        }
+        
+        .question  { font-style:bold; font-size:20px;}
+        .subquestion { margin-left:10px; font-size:15px; }
+        .block { 
+            margin: 0 auto;
+            width:400px;
+            font-size:10px;
+            word-break: break-all;
+        } 
+        .qa        {}
+        .answer    { margin-left:10px; font-size:12px;}
+        
+        div.code {
+            font-family: "Courier New", Courier, monospace ;
+            padding-left:20px;
+            background-color: rgb(229, 238, 204);/*#E0EAEA;*/
+            white-space: pre; 
+        }
+        
+        span.code { font-family: "Courier New", Courier, monospace ;}
+        
+        </style>
+    </head>
+    
+    
+    
+    <body>
+        <div class="body_container">
+            <div class="header">Humedica</div>
+            <div class="subheader"> Pre-Interview Questions </span></div>
+            
+            <div class="nav"><a href="/">Peter Swire</a> <a href="/cv">CV</a> <a href="palindrome.zip">Coding Exercise.</a></div>
+            <div class="qa">
+                <p class="question">What is the importance of <span class="code">hashCode()</span> and <span class="code">equals()</span> methods?</p>
+                <div class="answer">
+                    <p >Everything in Java (except for primitive types:
+                        <span class="code">char</span>,
+                        <span class="code">int</span>,
+                        <span class="code">boolean</span>,
+                        <span class="code">double</span>,
+                        <span class="code">float</span>, etc) <i>inherits</i> some traits from the <span class="code">Object</span> class.
+                        Since inheritance denotes an "is-a" relationship, in short, everything in Java is an <span class="code">Object.</span>
+                    </p>
+                    
+                    <p >The <span class="code">Object</span> class outlines the basic behavior that all objects need
+                        in order to interact with other objects or with the Java Virtual Machine itself.  This includes how the object is represented
+                        as a string, how the object behaves when it is removed from memory, and how the object interacts with the thread that is using it. </p>
+                        
+                    <p >
+                        The <span class="code">Object</span> class specifies an <span class="code">equals</span> method.  Consider this simple class:
+                    </p>
+<div class="code">
+public class Cat {
+    String name;
+    int numberOfSpots;
+    
+    public Cat(String name, int numberOfSpots){
+        this.name = name;
+        this.numberOfSpots = numberOfSpots;
+    }
+}
+
+</div><!-- code -->
+                    <p>with these examples:</p>
+<div class="code">
+Cat alfred = new Cat("Alfred", 3);
+Cat theSameAlfred = alfred;
+Cat aDifferentAlfred = new Cat("Alfred", 3);
+
+alfred == alfred // true
+alfred == theSameAlfred // true
+alfred == aDifferentAlfred // false
+
+alfred.equals(theSameAlfred); // true
+alfred.equals(aDifferentAlfred); // false
+
+</div><!-- code -->
+                    <p>Here, the <span class="code">==</span> operator checks to see if the two objects occupy <i>the exact same</i> location in memory.
+                        This is what <span class="code">the equals()</span> method does by default; it doesn't try to match any of the attributes of the two objects, 
+                        and only returns true if both of them refer to the same point in memory.
+                    </p>
+                    
+                    <p>We can make the <span class="code">equals()</span> method more discerning:</p>
+
+                    <div class="code">
+public class Cat {
+    public String name;
+    public int numberOfSpots;
+    
+    public Cat(String name, int numberOfSpots){
+        this.name = name;
+        this.numberOfSpots = numberOfSpots;
+    }
+    
+    // override lets us know that this method originates in the parent class
+    // in this case, Object
+    @Override
+    public boolean equals(Object otherCat){
+        // check to see if they occupy the same point in memory
+        if( this == otherCat){
+            return true;
+        }
+        
+        // you could only possibly be equal to this cat if you are also a cat
+        if(otherCat instanceof Cat){
+            // string is an object that has defined equals
+            boolean sameName = ((Cat)other).name.equals(this.name);
+            
+            // spots is a primitive, so we can use ==
+            boolean sameNumSpots = ((Cat)other).spots == this.spots;
+            
+            return sameName && sameNumSpots;
+        }
+        
+        return false;
+    }
+}
+
+</div><!-- code -->
+                    
+
+                    <p>Now, one cat is equal to another only if it has the same name and same number of spots.</p>
+                    
+                    <p>You can image that, since we now have control over how we compare objects, we can choose to only use
+                       the attributes we care about.  Here is a shirt with only some attributes we care about, and a very agreeable dog.
+                    </p>
+<div class="code">
+public class Shirt{
+    Style style;
+    int numButtons;
+    Date lastCleaned;
+    
+    @Override
+    public boolean equals(Object other){
+        if(object instanceof Shirt){
+            Shirt otherShirt = (Shirt)other;
+            
+            // note: we don't care when it was last cleaned
+            return this.style.equals(otherShirt.style) && this.numButtons == otherShirt.numButtons;
+        }
+        
+        return false;
+    }
+    
+</div><!-- code -->
+<div class="code">
+public class Dog {
+    String name;
+    public Dog(String name){
+        this.name = name;
+    }
+
+    @Override
+    public boolean equals(Object other){
+        return true;  // so agreeable!
+    }
+}
+
+</div><!-- code -->            
+
+        <p>A <b>hashcode</b> is an integer that uniquely defines an object. 
+            This value is used for things like HashTables, which uses that value to store an object in a bin.
+            Since this value is a unique definition, we can make two assertions:
+        </p> 
+        
+        <ol>
+            <li>If two objects are equal, they must have the same hashcode.<li>
+            <li>If you change an object's <span class="code">equals</span> method, you must also change
+            that object's <span class="code">hashCode</span> method to use the same values that the
+            <span class="code">equals</span> method uses.</li>
+        </ol>
+        
+        <p>Again, the cat example:</p>
+
+<div class="code">
+public class Cat {
+    public String name;
+    public int numberOfSpots;
+    
+    public Cat(String name, int numberOfSpots){
+        this.name = name;
+        this.numberOfSpots = numberOfSpots;
+    }
+    
+    // override lets us know that this method originates in the parent class
+    // in this case, Object
+    @Override
+    public boolean equals(Object otherCat){
+        // check to see if they occupy the same point in memory
+        if( this == otherCat){
+            return true;
+        }
+        
+        // you could only possibly be equal to this cat if you are also a cat
+        if(otherCat instanceof Cat){
+            // string is an object that has defined equals
+            boolean sameName = ((Cat)other).name.equals(this.name);
+            
+            // spots is a primitive, so we can use ==
+            boolean sameNumSpots = ((Cat)other).spots == this.spots;
+            
+            return sameName && sameNumSpots;
+        }
+        
+        return false;
+    }
+    
+    @Override
+    public int hashCode(){
+        // We use name and number of spots in equals, so we have to use it here
+        return 1337 + ( this.name.hashCode() * numberOfSpots); 
+    }
+}
+
+</div><!-- code -->           
+<br/>
+<div class="code">
+HashSet&lt;Cat&gt; catSet = HashSet&lt;Cat&gt;();
+Cat alfred = new Cat("alfred", 3);
+Cat sameAlfred = new Cat("alfred", 3);
+
+catSet.add(alfred);
+catSet.contains(sameAlfred); // this is now guaranteed to be true
+
+</div><!-- code -->
+                <p>This works because <span class="code">HashSet</span> doesn't use equality to see if it contains an element.
+                    Going directly to the bin allows for much faster lookups of values, but requires that <span class="code">hashCode</span>
+                    be defined in a way consistent with <span class="code">equals.</span>
+                </p>
+                    
+                </div> <!-- answer -->
+            </div> <!-- qa -->
+            
+            <div class="qa">
+                <p class="question">What are some best practices related to Java Collections Framework?</p>
+                <div class="answer">
+                <ul><li>Be aware of how you are defining equality (and hashcodes) for your objects.  See Section 1.</li>
+                    <li><p>Be aware of the access patterns for your collections:</p>
+                        <p>Will you need to iterate over each object?  Consider some kind of list.</p>
+                        <p>Will you be looking up things directly?  Consider some kind of HashTable.</p>
+                        <p>Is order important?  Consider a Tree if it is, or a Set if it is not.</p>
+                        <p>Will the size of the collection change drastically over time?  Expanding a Vector is less expensive than expanding a HashTable, which is about as expensive as rebalancing a tree.</p>
+                    <li>Hash collections generally have an undefined iteration order.  If you do choose to traverse it, you will not necessarily get items back in the order you put them in.</li>
+                    <li>There is really no reason to use a linked list.  An ArrayList gives you all the flexibility of a linked list, without the cost of a linear scan for all of its operations.</li>
+                    <li>Be aware of how many threads will be using the collection.  Some collections are not synchronized and are therefore faster, but can have errors if two threads try to use them at once.  For multithreaded programs, look for the word "Concurrent" in the name.</li>
+                </ul>
+                </div> <!-- answer -->
+            </div> <!-- qa -->
+            
+            <div class="qa">
+                <p class="question">Coding Exercise</p>
+                <p class="subquestion">Find the longest substring that is the same in reverse.  As an example, if the input was “I like racecars that go fast” the answer would be racecar.</p>
+                <p class="subquestion">Please provide a code example or a paragraph explaining how you would approach the problem using the following string.</p>
+                <p class="block">
+FourscoreandsevenyearsagoourfaathersbroughtforthonthiscontainentanewnationconceivedinzLibertyanddedicatedtothepropositionthatallmenarecreatedequalNowweareengagedinagreahtcivilwartestingwhetherthatnaptionoranynartionsoconceivedandsodedicatedcanlongendureWeareqmetonagreatbattlefiemldoftzhatwarWehavecometodedicpateaportionofthatfieldasafinalrestingplaceforthosewhoheregavetheirlivesthatthatnationmightliveItisaltogetherfangandproperthatweshoulddothisButinalargersensewecannotdedicatewecannotconsecratewecannothallowthisgroundThebravelmenlivinganddeadwhostruggledherehaveconsecrateditfaraboveourpoorponwertoaddordetractTgheworldadswfilllittlenotlenorlongrememberwhatwesayherebutitcanneverforgetwhattheydidhereItisforusthelivingrathertobededicatedheretotheulnfinishedworkwhichtheywhofoughtherehavethusfarsonoblyadvancedItisratherforustobeherededicatedtothegreattdafskremainingbeforeusthatfromthesehonoreddeadwetakeincreaseddevot iontothatcauseforwhichtheygavethelastpfullmeasureofdevotionthatweherehighlyresolvethatthesedeadshallnothavediedinvainthatthisnationunsderGodshallhaveanewbirthoffreedomandthatgovernmentofthepeoplebythepeopleforthepeopleshallnotperishfromtheearth</p>
+                <div class="answer">
+                    <p><a href="palindrome.zip">Code here.</a></p>
+                    <p>Output:</p>
+<div class="code">
+Finding longest palindomic substring in string:
+fourscoreandsevenyearsagoourfaathersbroughtforthonthiscontainentanew...
+ranynar
+Finished in 2 seconds.
+
+</div>
+                    <p>The code is is a little over-engineered, but this is an interview question: it's okay to show off a little.  The coding took about 40 minutes, or half the time it took to make this page.</p>
+                    <p>Notable components:</p>
+                    <ol>
+                        <li>Short circuiting:  if the first and last characters of a string aren't the same, don't bother seeing if it is a palindrome.</li>
+                        <li>Iterators:  You have a nice <span class="code">for(substring: new AllStrings(fullString))</span> pattern thanks to an iterator that spits out all substrings of length n</li>
+                        <li>Chaining iterators: it's a functional programming thing that lets you treat a handful of iterators like they are one.</li>
+                        <li>Generics:  The type for IteratorChain is parameterized.</li>
+                        <li>Command-line arguments: you can pass in a string, or use the default one.</li>
+                    </ol>
+                </div><!-- answer -->
+            </div><!-- qa -->
+            
+            <br><br><br>
+            <div class="nav"><a href="/">Home</a> <a href="/cv">CV</a> <a href="palindrome.zip">Coding Exercise.</a></div>
+        </div> <!-- body container -->
+        
+    </body>
+</html>
